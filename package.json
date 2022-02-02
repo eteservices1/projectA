@@ -4,19 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "ts-node index.ts",
+    "postinstall": "cd ./node_modules/projectB && tsc"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/eteservices1/projectA.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/eteservices1/projectA/issues"
-  },
-  "homepage": "https://github.com/eteservices1/projectA#readme",
   "devDependencies": {
     "typescript": "^4.5.4"
+  },
+  "dependencies": {
+    "projectb": "git+ssh://git@github.com:eteservices1/projectB.git",
+    "ts-node": "^10.4.0"
   }
 }
